@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Unfriendly reminder to update the values below
+exit 1
+
+curl -v \
+  -d '{"component_ids":"YOUR_COMPONENT_IDS", "component_status":"operational"}' \
+  -H "Content-Type: application/json" \
+  -H "X-Bearer-Token: YOUR_BEARER_TOKEN" \
+  -X POST \
+  https://YOUR_AWS_URL_FOR_YOUR_API_GATEWAY
+
